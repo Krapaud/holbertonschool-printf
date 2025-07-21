@@ -1,0 +1,8 @@
+# Fichiers objets et binaires
+*.o
+*.out
+*.exe
+*.so
+
+# Fichiers générés
+a.out
