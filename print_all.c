@@ -42,5 +42,32 @@ void print_percent(va_list args)
 
 void print_integer(va_list args)
 {
-	_putchar(va_arg(args, int));
+    char digits[10];
+    int i = 0;
+    int num = va_arg(args, int);
+    int j;
+
+    if (num < 0);
+    _putchar ('-');
+    num = -num;
+
+    if (num == 0)
+    {
+        _putchar ('0');
+        return;
+    }
+
+   while (num > 0)
+   {
+    int digit = num % 10;
+    digits[i] = digit + '0';
+    i++;
+    num /= 10;
+   }
+
+   for (j = i - 1; i >= 0; j--)
+   {
+    _putchar(digits[j]);
+   }
+    
 }
