@@ -1,0 +1,72 @@
+.TH _PRINTF 3 "July 2025" "1.0" "Custom Printf Manual"
+.SH NAME
+_printf \- formatted output conversion
+.SH SYNOPSIS
+.B #include "main.h"
+.sp
+.BI "int _printf(const char *" format ", ...);"
+.SH DESCRIPTION
+The
+.BR _printf ()
+function produces output according to a
+.I format
+as described below. The
+.BR _printf ()
+function writes output to
+.IR stdout ,
+the standard output stream.
+.PP
+The
+.BR _printf ()
+function writes the output under the control of a
+.I format
+string that specifies how subsequent arguments are converted for output.
+.SH FORMAT SPECIFIERS
+The format string is composed of zero or more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, each of which results in fetching zero or more subsequent arguments.
+.PP
+The conversion specifiers supported are:
+.TP
+.B %c
+Print a single character.
+.TP
+.B %s
+Print a string of characters.
+.TP
+.B %d, %i
+Print a decimal integer.
+.TP
+.B %%
+Print a literal % character.
+.SH RETURN VALUE
+Upon successful completion, these functions return the number of characters printed (excluding the null byte used to end output to strings).
+.PP
+If an error occurs, a negative value is returned.
+.PP
+If the format string is NULL, the function returns -1.
+.SH EXAMPLES
+.nf
+#include "main.h"
+
+int main(void)
+{
+    _printf("Hello %s!\\n", "World");
+    _printf("Number: %d\\n", 42);
+    _printf("Character: %c\\n", 'A');
+    _printf("Percentage: %%\\n");
+    return (0);
+}
+.fi
+.SH NOTES
+This is a custom implementation of printf with limited format specifier support.
+.PP
+The function uses variadic arguments (stdarg.h) to handle multiple parameters.
+.SH BUGS
+- Limited format specifier support compared to standard printf
+- No support for field width, precision, or flags
+- No support for long, short, or other length modifiers
+.SH SEE ALSO
+.BR printf (3),
+.BR sprintf (3),
+.BR fprintf (3)
+.SH AUTHORS
+Custom implementation for educational purposes by Nicolai Carabet and Mickael Mur.
