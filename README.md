@@ -12,13 +12,15 @@ Ce projet est une ré-implémentation simplifiée de la fonction `printf` du lan
 ## Fichiers
 
 - `main.h` : Fichier d'en-tête principal, contient les prototypes et structures.
-- `*.c` : Fichiers sources de l'implémentation.
+- `_printf.c` : Fonction principale _printf
+- `spec_functions.c` : Fonctions de gestion des spécificateurs (print_char, print_string, print_integer, print_percent)
+- `get_spec_functions.c` : Fonction de sélection des spécificateurs
 - `README.md` : Ce fichier.
 - `.gitignore` : Fichiers à ignorer par git.
 
 ## Compilation
 
-Pour compiler le projet :
+Pour compiler le projet :
 
 ```sh
 gcc -Wall -Werror -Wextra -pedantic *.c -o printf
@@ -26,7 +28,7 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o printf
 
 ## Utilisation
 
-Exemple d'utilisation dans un programme C :
+Exemple d'utilisation dans un programme C :
 
 ```c
 #include "main.h"
@@ -37,6 +39,16 @@ int main(void)
     return (0);
 }
 ```
+
+## Spécificateurs supportés
+
+| Spécificateur | Description |
+|---------------|-------------|
+| `%c` | Caractère |
+| `%s` | Chaîne de caractères |
+| `%d` | Entier décimal |
+| `%i` | Entier |
+| `%%` | Caractère % littéral |
 
 ## Auteurs
 
