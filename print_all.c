@@ -20,7 +20,7 @@ int print_char(va_list args)
 int print_string(va_list args)
 {
 	int len = 0;
-	char *str = va_arg(args, char);
+	char *str = va_arg(args, char *);
 
 	if (str == NULL)
 	{
@@ -28,7 +28,7 @@ int print_string(va_list args)
 	}
 	while (str[len])
 	{
-	_putchar (str[len]);
+	_putchar(str[len]);
 	len++;
 	}
 	return (len);
