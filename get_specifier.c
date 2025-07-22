@@ -19,7 +19,7 @@ int (*get_op_func(char specifier))(va_list)
 	{'d', print_integer},
 	{'i', print_integer},
 	{'\0', NULL}
-};
+	};
 	int i = 0;
 
 	while (print_funcs[i].specifier != '\0')

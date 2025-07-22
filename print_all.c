@@ -7,15 +7,15 @@
  * print_char - prints a character from the argument list
  * @args: argument list containing the character to print
  */
-void print_char(va_list args)
+int print_char(va_list args)
 {
-	_putchar(va_arg(args, int));
+	return (_putchar(va_arg(args, int)));
 }
 /**
  * print_string - prints a string from the argument list
  * @args: argument list containing the string to print
  */
-void print_string(va_list args)
+int print_string(va_list args)
 {
 	int len = 0;
 	char *str = va_arg(args, char*);
@@ -29,18 +29,19 @@ void print_string(va_list args)
 		_putchar(str[len]);
 		len++;
 	}
+	return (len);
 }
 /**
  * print_percent - prints a percent sign
  * @args: argument list (unused)
  */
-void print_percent(va_list args)
+int print_percent(va_list args)
 {
 	(void)args;
-	_putchar('%');
+	return (_putchar('%'));
 }
 
-void print_integer(va_list args)
+int print_integer(va_list args)
 {
     char digits[10];
     int i = 0;
