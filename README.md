@@ -19,8 +19,13 @@ holbertonschool-printf/
 ├── README.md               # This file
 ├── gitignore              # Git ignore patterns
 └── img/                   # Documentation images
-    └── man_3_printf.png
+    └── man_3_printf.png # Screenshot of the manual page
+    └── flowchart.png    # Flowchart of the _printf function
 ```
+
+**Documentation image:**  
+![man_3_printf manual page](img/man_3_printf.png)
+![Flowchart of _printf function](img/flowchart.png)
 
 ## Main Functions
 
@@ -97,7 +102,29 @@ A custom manual page is provided in [man_3_printf](man_3_printf) following the s
 
 Ce projet est une ré-implémentation simplifiée de la fonction `printf` du langage C. Il permet d'afficher des chaînes de caractères formatées à la sortie standard, en gérant plusieurs types de spécificateurs de format.
 
-## Fonctions principales
+## Structure du projet
+
+```
+
+holbertonschool-printf/
+├── main.h                    # Fichier d'en-tête avec prototypes et structures
+├── _printf.c                 # Implémentation de la fonction principale _printf
+├── _putchar.c               # Fonction de sortie de caractères
+├── spec_functions.c         # Fonctions gestionnaires des spécificateurs de format
+├── get_spec_functions.c     # Logique de sélection des spécificateurs de format
+├── main.c                   # Fichier de test avec exemples
+├── man_3_printf            # Page de manuel pour _printf
+├── printf                  # Fichier exécutable compilé
+├── README.md               # Ce fichier
+├── gitignore              # Modèles d'exclusion Git
+└── img/                   # Images de documentation
+    └── man_3_printf.png # Capture d'écran de la page de manuel
+    └── flowchart.png    # Diagramme de flux de la fonction _printf
+```
+
+**Documentation image:**  
+![man_3_printf manual page](img/man_3_printf.png)
+![Flowchart of _printf function](img/flowchart.png)
 
 ### Fonctions centrales
 - [`_printf`](_printf.c) : Fonction principale qui traite les chaînes de format et les arguments
@@ -181,7 +208,28 @@ Projet réalisé dans le cadre de la formation Holberton School. Utilisation per
 
 Этот проект представляет собой упрощенную реализацию функции `printf` языка C. Он позволяет выводить форматированные строки на стандартный вывод, поддерживая несколько типов спецификаторов формата.
 
-## Основные функции
+## Структура проекта
+
+```
+holbertonschool-printf/
+├── main.h                    # Заголовочный файл с прототипами и структурами
+├── _printf.c                 # Реализация основной функции _printf
+├── _putchar.c               # Функция вывода символов
+├── spec_functions.c         # Функции-обработчики спецификаторов формата
+├── get_spec_functions.c     # Логика выбора спецификаторов формата
+├── main.c                   # Тестовый файл с примерами
+├── man_3_printf            # Страница руководства для _printf
+├── printf                  # Скомпилированный исполняемый файл
+├── README.md               # Этот файл
+├── gitignore              # Шаблоны игнорирования Git
+└── img/                   # Изображения документации
+    └── man_3_printf.png # Скриншот страницы руководства
+    └── flowchart.png    # Блок-схема функции _printf
+```
+
+**Documentation image:**  
+![man_3_printf manual page](img/man_3_printf.png)
+![Flowchart of _printf function](img/flowchart.png)
 
 ### Центральные функции
 - [`_printf`](_printf.c): Основная функция, которая обрабатывает строки формата и аргументы
