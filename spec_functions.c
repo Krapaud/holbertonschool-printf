@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <limits.h>
 /**
 * print_char - prints a character from the argument list
 * @args: argument list containing the character to print
@@ -50,39 +51,44 @@ int print_percent(va_list args)
  */
 int print_integer(va_list args)
 {
-	char digits[10];
+	char digits[12];
 	int i = 0;
 	int num = va_arg(args, int);
 	int j;
+	int digit;
 	int count = 0;
+	int is_negative = 0;
 
 	if (num < 0)
 	{
 		_putchar ('-');
 		count++;
-		num = -num;
+		is_negative = 1;
 	}
 
 	if (num == 0)
 	{
 		_putchar ('0');
-		return (1);
+		return (count + 1);
 	}
 
-	while (num > 0)
+
+	while (num != 0)
 	{
-		int digit = num % 10;
 
-		digits[i] = digit + '0';
-		i++;
-		num /= 10;
+	if (is_negative)
+		digit = -(num % 10);
+	else
+		digit = num % 10;
+
+	digits[i] = digit + '0';
+	i++;
+	num /= 10;
 	}
-
 	for (j = i - 1; j >= 0; j--)
 	{
-		_putchar (digits[j]);
+		_putchar(digits[j]);
 		count++;
 	}
-
 	return (count);
 }
