@@ -20,7 +20,7 @@ holbertonschool-printf/
 ├── gitignore              # Git ignore patterns
 └── img/                   # Documentation images
     └── man_3_printf.png # Screenshot of the manual page
-    └── flowchart.png    # Flowchart of the _printf function
+    └── flowcharts.png    # Flowchart of the _printf function
 ```
 
 **Documentation image:**  
@@ -119,12 +119,12 @@ holbertonschool-printf/
 ├── gitignore              # Modèles d'exclusion Git
 └── img/                   # Images de documentation
     └── man_3_printf.png # Capture d'écran de la page de manuel
-    └── flowchart.png    # Diagramme de flux de la fonction _printf
+    └── flowcharts.png    # Diagramme de flux de la fonction _printf
 ```
 
 **Documentation image:**  
 ![man_3_printf manual page](img/man_3_printf.png)
-![Flowchart of _printf function](img/flowchart.png)
+![Flowcharts of _printf function](img/flowchart.png)
 
 ### Fonctions centrales
 - [`_printf`](_printf.c) : Fonction principale qui traite les chaînes de format et les arguments
@@ -224,12 +224,12 @@ holbertonschool-printf/
 ├── gitignore              # Шаблоны игнорирования Git
 └── img/                   # Изображения документации
     └── man_3_printf.png # Скриншот страницы руководства
-    └── flowchart.png    # Блок-схема функции _printf
+    └── flowcharts.png    # Блок-схема функции _printf
 ```
 
-**Documentation image:**  
+**Изображения документации:**  
 ![man_3_printf manual page](img/man_3_printf.png)
-![Flowchart of _printf function](img/flowchart.png)
+![Flowcharts of _printf function](img/flowchart.png)
 
 ### Центральные функции
 - [`_printf`](_printf.c): Основная функция, которая обрабатывает строки формата и аргументы
