@@ -25,7 +25,7 @@ holbertonschool-printf/
 
 **Documentation image:**  
 ![man_3_printf manual page](img/man_3_printf.png)
-![Flowchart of _printf function](img/flowchart.png)
+![Flowchart of _printf function](img/flowcharts.png)
 
 ## Main Functions
 
