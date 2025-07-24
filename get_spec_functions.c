@@ -24,6 +24,7 @@ int get_spec(char format, va_list args)
 		{'i', print_integer},
 		{'\0', NULL}
 	};
+	/* Array of format specifiers and their corresponding functions */
 
 	int j = 0;
 	int count = 0;
@@ -31,14 +32,19 @@ int get_spec(char format, va_list args)
 	while (print_funcs[j].specifier != '\0')
 	{
 		if (format == print_funcs[j].specifier)
+		/*If the specifier matches*/
 		{
 			count += print_funcs[j].f(args);
 			return (count);
+		/*Call the function associated with the specifier*/
+		/*and return the count of characters printed*/
 		}
 		j++;
 	}
 	/* If specifier is not recognized, print '%' and the character */
 	_putchar('%');
+	/* Print the unknown format specifier */
 	_putchar(format);
 	return (2);
+	/* Return 2 for the two characters printed */
 }
