@@ -13,7 +13,7 @@
  *
  * Return: number of characters printed, or -1 on error
  */
-int_printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	va_list args;
 	int count = 0; /* Total number of characters printed */
