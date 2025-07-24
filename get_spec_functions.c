@@ -3,12 +3,16 @@
 #include <stdarg.h>
 #include <string.h>
 /**
- * get_spec - récupère le pointeur vers la fonction correspondant
- *                 à un spécificateur de format (%d, %s, etc.)
- * @format: le caractère du format (ex: 'd', 's', etc.)
- * @args: la liste d'arguments variables à traiter par la fonction de format
+ * get_spec - retrieves the function pointer for a format specifier
+ * @format: the format character (e.g. 'd', 's', etc.)
+ * @args: the variable argument list to be processed by the format function
  *
- * Return: pointeur vers une fonction qui prend un va_list et retourne un int
+ * Description: This function iterates through the print_funcs array to find
+ * the function corresponding to the given format specifier. If found, it
+ * calls the function and returns the number of characters printed. If the
+ * specifier is not recognized, it prints '%' followed by the unknown format.
+ *
+ * Return: number of characters printed
  */
 int get_spec(char format, va_list args)
 {
@@ -33,6 +37,7 @@ int get_spec(char format, va_list args)
 		}
 		j++;
 	}
+	/* If specifier is not recognized, print '%' and the character */
 	_putchar('%');
 	_putchar(format);
 	return (2);
