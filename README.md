@@ -124,7 +124,7 @@ holbertonschool-printf/
 
 **Documentation image:**  
 ![man_3_printf manual page](img/man_3_printf.png)
-![Flowcharts of _printf function](img/flowchart.png)
+![Flowcharts of _printf function](img/flowcharts.png)
 
 ### Fonctions centrales
 - [`_printf`](_printf.c) : Fonction principale qui traite les chaînes de format et les arguments
@@ -229,7 +229,7 @@ holbertonschool-printf/
 
 **Изображения документации:**  
 ![man_3_printf manual page](img/man_3_printf.png)
-![Flowcharts of _printf function](img/flowchart.png)
+![Flowcharts of _printf function](img/flowcharts.png)
 
 ### Центральные функции
 - [`_printf`](_printf.c): Основная функция, которая обрабатывает строки формата и аргументы
