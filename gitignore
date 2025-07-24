@@ -3,6 +3,8 @@
 *.out
 *.exe
 *.so
+main.c
+_printf
 
 # Fichiers générés
 a.out
