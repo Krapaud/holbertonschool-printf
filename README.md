@@ -45,7 +45,7 @@ holbertonschool-printf/
 To compile the project:
 
 ```sh
-gcc -Wall -Werror -Wextra -pedantic *.c -o printf
+gcc -Wall -Werror -Wextra -pedantic *.c -o _printf
 ```
 
 ## Usage
@@ -142,7 +142,7 @@ holbertonschool-printf/
 Pour compiler le projet :
 
 ```sh
-gcc -Wall -Werror -Wextra -pedantic *.c -o printf
+gcc -Wall -Werror -Wextra -pedantic *.c -o _printf
 ```
 
 ## Utilisation
@@ -247,7 +247,7 @@ holbertonschool-printf/
 Для компиляции проекта:
 
 ```sh
-gcc -Wall -Werror -Wextra -pedantic *.c -o printf
+gcc -Wall -Werror -Wextra -pedantic *.c -o _printf
 ```
 
 ## Использование
